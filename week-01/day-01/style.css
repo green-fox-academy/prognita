@@ -48,7 +48,8 @@ body{
   }
   .main {
     
-    padding: 40px 240px 40px 170px;
+    padding: 30px 270px 40px 270px;
+    align-content: center;
   
   }
   
@@ -58,19 +59,20 @@ body{
     font-weight: bold;
 
   }
-  .circle {
-    display: inline-block;
+  .circle 
+  {
     width: 3px;
     height: 3px;
     background-color:rgb(114, 113, 113);
     border-radius: 50%;
-    margin-bottom: 20px;
-    justify-content: center;
- }
- p
- {
+    margin-bottom: 20px;   
+    align-content: center;
+
+  }
+
+ p {
     font-family: Courier New, Courier, monospace;
-    padding-left : 10px; 
+    padding-left : 2px; 
  }
  
  h1
@@ -95,6 +97,7 @@ body{
     font-family: Courier New, Courier, monospace;
     color: #333333;
     font-weight: bold;
+    font-size:20px;
  }
 
 
