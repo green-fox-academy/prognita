@@ -1,0 +1,13 @@
+public class AppendArray {
+
+    public static void main(String[] args) {
+
+        String[] nimals = {"kuty", "macsk", "cic"};
+        for (int i = 0; i < nimals.length; i++) {
+            //nimals[i] = nimals[i].concat("a");
+            nimals[i] +="a";
+            System.out.println(nimals[i]);
+        }
+
+    }
+}
