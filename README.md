@@ -11,13 +11,13 @@ This repo belongs to Anita Kórógyi
 
 What I learnt under Accenture- GreenFox:
 
-Week1 :
+Week1 
 -------
-Your first website
+Your first website<prognita/week-01/day-01/index.html>
 
-GIT, CLI
+GIT, CLI 
 
-Week2 :
+Week2 
 ------
 Expressions and Control flow
 
@@ -25,24 +25,22 @@ Practice + Computer Basics
 
 Data structures
 
-Week3 :
+Week3 
 ------
 Arrays and functions
 
 Drawing with java
 
-Week4 :
+Week4
 ------
 File IO
 
-Week5 :
+Week5 
 ------
 Classes and objects
 
 Inheritance
 
-
 Week6 :
 ------
-
 Abstracts and Interfaces
