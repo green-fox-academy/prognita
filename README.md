@@ -13,7 +13,7 @@ What I learnt under Accenture- GreenFox:
 ----
 Week1 
 -------
-- Your first website prognita/week-01/day-01/index.html
+- Your first website [Link](prognita/week-01/day-01/index.html)
 
 - GIT, CLI 
 
