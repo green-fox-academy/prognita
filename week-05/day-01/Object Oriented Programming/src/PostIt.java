@@ -43,6 +43,8 @@ public class PostIt {
         Paper3.textColor = "green";
 
         Paper3.writeit();
+
+
     }
 }
 
