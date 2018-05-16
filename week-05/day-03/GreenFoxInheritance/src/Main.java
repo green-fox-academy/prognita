@@ -11,8 +11,19 @@ public class Main {
         people.add(jane);
         Student john = new Student("John Doe", 20, Gender.MALE, "BME");
         people.add(john);
+
+        Student john2 = new Student();
+        try {
+            john2 = (Student) john.clone();
+
+        } catch (CloneNotSupportedException e) {
+            System.out.println("This object cannot clone");
+        }
+
         Student student = new Student("Jane Doe", 30, Gender.FEMALE, "The School of Life");
         people.add(student);
+
+
         Mentor gandhi = new Mentor("Gandhi", 148, Gender.MALE, "senior");
         people.add(gandhi);
         Mentor mentor = new Mentor("Jane Doe", 30, Gender.FEMALE, "intermediate");
@@ -43,5 +54,8 @@ public class Main {
         awesome.addMentor(mentor);
         awesome.addMentor(gandhi);
         awesome.info();
+        System.out.println(" ");
+        john2.introduce();
+        john2.getGoal();
     }
 }
