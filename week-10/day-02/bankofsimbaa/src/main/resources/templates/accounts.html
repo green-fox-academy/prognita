@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Bank of Simba</title>
+    <meta charset="utf-8"/>
+</head>
+<body>
+<table style="width:50%; height:300px; font-size: large">
+    <tr style="background-color:greenyellow">
+        <th>INDEX</th>
+        <th>NAME</th>
+        <th>BALANCE</th>
+        <th>TYPE</th>
+        <th>OWNER</th>
+        <th>CHARACTER</th>
+        <th>RAISE BALANCE</th>
+    </tr>
+    <th:block th:if="${accounts} != null">
+        <tr th:each="currentAccount: ${accounts}" style="background-color:#b9ffb6" align="center">
+            <td th:text="${currentAccountStat.index}"></td>
+            <td th:text="${currentAccount.name}"></td>
+            <td th:text="${currentAccount.balance}"></td>
+            <td th:text="${currentAccount.animalType}"></td>
+            <td th:style="${currentAccount.accountKing(currentAccount) == 'King'} ? 'color:gold' : 'color:black'"
+                th:text="${currentAccount.accountKing(currentAccount)}"></td>
+            <td th:style="${currentAccount.accountBadGuy(currentAccount) == 'Bad Guy'} ? 'color:red' : 'color:b'"
+                th:text="${currentAccount.accountBadGuy(currentAccount)}"></td>
+            <td>
+                <form action="#" data-th-action="@{/accounts}" th:object="${currentAccount}" method="post">
+                    <button type="submit" th:name="currentAccount" th:value="${currentAccount}">Raise balance </button>
+                </form>
+            </td>
+
+        </tr>
+
+    </th:block>
+</table>
+
+</body>
+</html>
