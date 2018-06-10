@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:text-align="http://www.w3.org/1999/xhtml">
 <head>
     <title>Bank of Simba</title>
     <meta charset="utf-8"/>
 </head>
-<body>
-<table style="width:50%; height:300px; font-size: large">
+<body style="text-align: center" bgcolor="#f5fffa">
+<table style="width:50%; height:300px; font-size: large" bgcolor="#f0ffff" border="20px" align="center">
+    <img src="simba.jpg" alt="simba" style="float:left;width:100px;height:100px;overflow: auto"/>
+    <h1 style="text-align:center; color: chartreuse"> Bank of Simba </h1>
+    <h2 style="text-align: center; color: chartreuse"> Your bank for a circle of life </h2>
+
     <tr style="background-color:greenyellow">
         <th>INDEX</th>
         <th>NAME</th>
@@ -26,11 +30,19 @@
             <td th:style="${currentAccount.accountBadGuy(currentAccount) == 'Bad Guy'} ? 'color:red' : 'color:b'"
                 th:text="${currentAccount.accountBadGuy(currentAccount)}"></td>
             <td>
-                <form action="#" data-th-action="@{/accounts}" th:object="${currentAccount}" method="post">
-                    <button type="submit" th:name="currentAccount" th:value="${currentAccount}">Raise balance </button>
+                <form action="#" method="post">
+                    <button type="submit">Raise balance</button>
                 </form>
             </td>
 
+        </tr>
+
+        <tr>
+            <td>
+            <form action="#">
+                <button type="submit"> Add new account</button>
+            </form>
+            </td>
         </tr>
 
     </th:block>

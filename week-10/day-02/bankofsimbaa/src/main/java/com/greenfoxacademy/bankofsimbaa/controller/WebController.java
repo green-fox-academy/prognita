@@ -77,13 +77,11 @@ public class WebController {
         return "accounts";
     }
 
-    @RequestMapping("")
-    public String increaseBalanceOfAccount(@ModelAttribute BankAccount currentBankAccount) {
+    @RequestMapping("/accounts")
+    public String increaseBalance(@ModelAttribute BankAccount currentBankAccount) {
         bankService.increaseBalance(currentBankAccount);
         return "accounts";
     }
-
-
 
     @RequestMapping("hello")
     public String htmlCeption(Model model) {
