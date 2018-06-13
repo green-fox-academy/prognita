@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Email</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<h1> E-mail Validator!</h1>
+
+<div th:if="${valid}">
+    <h2 style="color: green" th:text="${address}+' is a valid email address'"></h2>
+</div>
+
+<div th:unless="${valid}">
+    <h2 style="color: red" th:text="${address}+' is not a valid email address'"></h2>
+
+</div>
+
+</body>
+</html>
