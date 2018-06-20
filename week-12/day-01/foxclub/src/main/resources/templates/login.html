@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+</head>
+<body>
+<h1>Welcome to Poro Club</h1>
+<h2> Please provide a name, so you can associate it to your pet</h2>
+
+<form action="#" th:action="@{'/foxName'}" method="post">
+    <div>
+        <label for="foxName"> Name: </label>
+        <input type="text" id="foxName" name="foxName" />
+    </div>
+    <div>
+        <input type="submit" value="Name it!">
+    </div>
+
+</body>
+</html>

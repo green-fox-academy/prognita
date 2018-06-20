@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Poro Club</title>
+</head>
+<body style="align-content: center">
+<ul>
+    <li>
+        <a th:href="@{/information}" href="#">Information</a>
+    </li>
+</ul>
+
+<div>
+    <img id="greenfox" src="LoL_Facebook_Icon_14.gif" alt="Green Fox"/>
+</div>
+
+<div>
+    <p th:text="'This is ' + ${name} + '. Currently living on salad and water. He knows 2 tricks.'"></p>
+</div>
+
+<h1>Known tricks </h1>
+
+<ul>
+    <li>
+        <p>write html</p>
+    </li>
+    <li>
+        <p>code in java</p>
+    </li>
+</body>
+</html>

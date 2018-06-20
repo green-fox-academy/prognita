@@ -12,8 +12,6 @@ public interface BankService {
 
     ArrayList<BankAccount>getAllAccount();
 
-    void increaseBalance(BankAccount currentBankAccount);
-
     void createSimba();
 
     void createZebra();
@@ -28,4 +26,5 @@ public interface BankService {
 
     void createShenzi();
 
+    void raiseTheBalance(int account);
 }

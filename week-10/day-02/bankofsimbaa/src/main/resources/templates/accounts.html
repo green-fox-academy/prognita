@@ -30,8 +30,9 @@
             <td th:style="${currentAccount.accountBadGuy(currentAccount) == 'Bad Guy'} ? 'color:red' : 'color:b'"
                 th:text="${currentAccount.accountBadGuy(currentAccount)}"></td>
             <td>
-                <form action="#" method="post">
-                    <button type="submit">Raise balance</button>
+                <form action="#" th:action="@{/accounts.html}" method="post" th:name="currentAccount"
+                      th:value="${currentAccount}">
+                    <input type="submit" value="Raise Balance">
                 </form>
             </td>
 
@@ -39,9 +40,11 @@
 
         <tr>
             <td>
-            <form action="#">
-                <button type="submit"> Add new account</button>
-            </form>
+                <form action="#" th:action="@{/newAccount}" method="post" align="center">
+                    <div>
+                        <input type="submit" value="Create a new account">
+                    </div>
+                </form>
             </td>
         </tr>
 

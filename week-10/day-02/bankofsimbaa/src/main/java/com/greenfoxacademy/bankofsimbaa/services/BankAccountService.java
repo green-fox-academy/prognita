@@ -65,12 +65,15 @@ public class BankAccountService implements com.greenfoxacademy.bankofsimbaa.serv
     }
 
     @Override
-    public void increaseBalance(BankAccount currentBankAccount) {
-        if (currentBankAccount.accountKing(currentBankAccount).equals("King")) {
+    public void raiseTheBalance(int index) {
+        BankAccount currentBankAccount = bankAccounts.get(index);
+
+        if (currentBankAccount.accountKing(currentBankAccount).equals("king")) {
             currentBankAccount.setBalance(currentBankAccount.getBalance() + 100);
         } else {
             currentBankAccount.setBalance(currentBankAccount.getBalance() + 10);
         }
+
     }
 }
 
