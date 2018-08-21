@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:if="${hasTrickToLearn}">
+    <form id="tricks" action="" method="post">
+        <div>
+            <label for="trick">Tricks:</label>
+            <select id="trick" name="trick">
+                <option th:each="trick : ${tricks}"
+                        th:value="${trick}"
+                        th:utext="${trick}">
+                </option>
+            </select>
+            <input type="submit" value="Learn">
+        </div>
+    </form>
+</div>
+<div th:unless="${hasTrickToLearn}">
+    <div>Fox has already learned all available tricks.</div>
+</div>
+</body>
+</html>
